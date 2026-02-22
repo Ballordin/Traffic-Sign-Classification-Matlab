@@ -1,4 +1,4 @@
-# Classificação de Sinais de Trânsito em Tempo Real 🚦
+# Classificação de Sinais de Trânsito em Tempo Real 🛑
 
 Este projeto foi desenvolvido no âmbito da unidade curricular de **Robótica** da licenciatura em Engenharia Eletrotécnica e de Computadores (IPCA). O sistema utiliza visão computacional para detetar e classificar sinais de trânsito através de uma webcam em tempo real.
 
@@ -21,15 +21,12 @@ O pipeline de processamento de imagem segue estas etapas:
 5. **Extração de Características:** Análise de propriedades geométricas (circularidade, centroides e bounding boxes).
 6. **Classificação:** Lógica baseada em regras para distinguir sinais como STOP, Sentido Obrigatório, etc.
 
-
-
 ## 📊 Resultados e GUI
 A aplicação (App Designer) permite ao utilizador:
 - Ajustar os limites de cor (H, S, V) em tempo real através de sliders.
 - Visualizar a máscara binária e o resultado da classificação sobreposto ao vídeo.
 - Gerar um histórico de validação para cálculo de estatísticas de acerto.
 
-> **Nota:** O sistema demonstrou elevada eficácia em ambientes de iluminação controlada, com capacidade de exportação de dados para análise posterior em `.mat` ou `.csv`.
 
 ---
 © 2026 Tiago Oliveira - Engenharia Eletrotécnica @ IPCA
