@@ -1,5 +1,11 @@
 # Classificação de Sinais de Trânsito em Tempo Real 🛑
 
+## 📺 Demonstração em Vídeo
+Clique no botão abaixo para visualizar o sistema de classificação de sinais em funcionamento:
+
+https://www.youtube.com/watch?v=p-COLnelIgo
+
+
 Este projeto foi desenvolvido no âmbito da unidade curricular de **Robótica** da licenciatura em Engenharia Eletrotécnica e de Computadores (IPCA). O sistema utiliza visão computacional para detetar e classificar sinais de trânsito através de uma webcam em tempo real.
 
 ## 🎯 Objetivos
