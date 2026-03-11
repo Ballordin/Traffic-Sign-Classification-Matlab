@@ -1,37 +1,28 @@
-# Classificação de Sinais de Trânsito em Tempo Real 🛑
+# 🚦 Traffic Sign Classification & Real-Time Computer Vision
+**Computer Vision | MATLAB App Designer | Color Segmentation | Performance Metrics**
 
-Este projeto foi desenvolvido no âmbito da unidade curricular de **Robótica** da licenciatura em Engenharia Eletrotécnica e de Computadores (IPCA). O sistema utiliza visão computacional para detetar e classificar sinais de trânsito através de uma webcam em tempo real.
+## 📖 Overview
+This project focuses on the detection and classification of road traffic signs in real-time using a standard webcam. Developed in **MATLAB**, the system employs advanced image processing techniques to isolate, identify, and validate traffic signs (STOP, Mandatory Left, Mandatory Right) based on color and shape analysis.
 
-## Demonstração em Vídeo
-Clique no botão abaixo para visualizar o sistema de classificação de sinais em funcionamento:
-
-[![Assistir ao Vídeo](https://img.shields.io/badge/YouTube-Assistir%20Vídeo-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=p-COLnelIgo)
-
-## Objetivos
-- Implementar algoritmos de processamento digital de imagem em **MATLAB**.
-- Desenvolver uma Interface Gráfica (GUI) interativa para controlo e calibração.
-- Validar o desempenho do sistema através de métricas de precisão e recall.
-
-## Tecnologias e Ferramentas
-- **Linguagem:** MATLAB
-- **Toolboxes:** Image Acquisition Toolbox, Image Processing Toolbox.
-- **Hardware:** Webcam integrada/USB.
-
-## Metodologia Técnica
-O pipeline de processamento de imagem segue estas etapas:
-1. **Aquisição:** Captura de frames em tempo real.
-2. **Pré-processamento:** Conversão do espaço de cor RGB para **HSV** (para maior robustez à iluminação).
-3. **Segmentação:** Aplicação de thresholds dinâmicos para isolar as cores do sinal (Vermelho, Azul).
-4. **Morfologia:** Operações de erosão e dilatação para remoção de ruído.
-5. **Extração de Características:** Análise de propriedades geométricas (circularidade, centroides e bounding boxes).
-6. **Classificação:** Lógica baseada em regras para distinguir sinais como STOP, Sentido Obrigatório, etc.
-
-## Resultados e GUI
-A aplicação (App Designer) permite ao utilizador:
-- Ajustar os limites de cor (H, S, V) em tempo real através de sliders.
-- Visualizar a máscara binária e o resultado da classificação sobreposto ao vídeo.
-- Gerar um histórico de validação para cálculo de estatísticas de acerto.
+## 🛠️ Technical Features
+* **Real-Time Processing:** Low-latency acquisition and processing of video frames.
+* **HSV Color Segmentation:** Robust detection across different lighting conditions using dynamic thresholds.
+* **Feature Extraction:** Analysis of object properties (Centroid, Bounding Box, Eccentricity) to distinguish between circular and octagonal signs.
+* **Interactive GUI:** Built with **MATLAB App Designer**, allowing:
+    * Live video feed with mask overlays.
+    * Dynamic adjustment of HSV parameters.
+    * Real-time classification results and historical log.
 
 
----
-© 2026 Tiago Oliveira - Engenharia Eletrotécnica @ IPCA
+
+## 📈 Performance Analysis
+The project includes a validation module that calculates:
+* **Precision & Recall:** Measuring the accuracy of the detection engine.
+* **Confusion Matrix:** Evaluating classification performance across different sign types.
+* **Distance Sensitivity:** Analysis of how resolution and distance affect classification reliability.
+
+## 📺 Project Demo
+[Watch the Real-Time Classification Video on YouTube](https://www.youtube.com/watch?v=p-COLnelIgo)
+
+## 👥 Author
+* Tiago Oliveira
